@@ -1,0 +1,53 @@
+
+package caculate;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ifitkhar
+ */
+public class Caculate {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Company");
+        String name = sc.next();
+        System.out.println("Enter Row");
+        int row = sc.nextInt();
+        System.out.println("Enter Colum");
+        int col = sc.nextInt();
+        String empdata[][] = new String [row][col];
+        System.out.println("Enter the Employee Data");
+        for (int i = 0; i < empdata.length; i++) {
+            for (int j = 0; j < empdata.length; j++) {
+                empdata[i][j] = sc.next();
+            }
+        }
+        System.out.println("OutPut One");
+        for (int i = 0; i < empdata.length; i++) {
+            for (int j = 0; j < empdata[i].length; j++) {
+                System.out.print( empdata[i][j]+"\t"); 
+            }
+            System.out.println("\n");
+        }
+         String empdataone[][] = new String [row][col];
+         System.out.println("Enter the Values");
+         for (int i = 0; i < empdataone.length; i++) {
+             for (int j = 0; j < empdataone.length; j++) {
+               empdataone[i][j] = sc.next();
+             } 
+        }
+         System.out.println("OutPut Two");
+         for (int i = 0; i < empdataone.length; i++) {
+             for (int j = 0; j < empdataone[i].length; j++) {
+                 System.out.print( empdataone[i][j]+"\t");
+             }
+        }
+         System.out.println("\n");
+    }
+    
+}
